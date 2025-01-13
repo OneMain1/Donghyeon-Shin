@@ -49,18 +49,17 @@
   }
   
   .page__content {
-   /* 이미지와 PDF를 위한 컨테이너 스타일 */
    .content-container {
     text-align: center;
     position: relative;
     
     @include breakpoint($large) {
-      margin-left: $right-sidebar-width-narrow; // sidebar 너비만큼 왼쪽 마진
-      width: calc(100% - #{$right-sidebar-width-narrow});  // 나머지 공간 채우기
+      margin-left: $right-sidebar-width-narrow; 
+      width: calc(100% - #{$right-sidebar-width-narrow}); 
     }
     
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width} - 4em);  // 큰 화면에서는 더 넓은 sidebar 고려
+      width: calc(100% - #{$right-sidebar-width} - 4em);
     }
     
     img {
