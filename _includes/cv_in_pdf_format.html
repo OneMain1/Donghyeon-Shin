@@ -1,0 +1,12 @@
+{% include base_path %}
+
+<body>
+    <div class="content-container">
+        <div id="example1" style="width: 50rem; height:50rem; margin: 0 auto; padding: 0 0 0 8em; position: relative; z-index: 10;"></div>
+    </div>
+
+    <script src="{{ base_path }}/assets/js/pdfobject.js"></script>
+    <script>
+        PDFObject.embed("{{ base_path }}/files/CV___donghyeon.pdf", "#example1");
+    </script>
+</body>
